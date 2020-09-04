@@ -1,0 +1,14 @@
+.button{
+  margin-left:100px;
+-fx-background-color: FF99FF;
+}
+.button:hover{
+-fx-background-color: CC3399;
+}
+.text-field{
+-fx-background-color: FFCCFF;
+}
+
+.root{
+-fx-font-size:25;
+}

@@ -1,0 +1,40 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.GridPane?>
+<VBox fx:controller="calculator.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <stylesheets>
+        <URL value="@/styles/style.css"/>
+    </stylesheets>
+    <stylesheets>
+        <URL value="@/calculator/style.css"/>
+    </stylesheets>
+    <TextField fx:id="textField" />
+    <TextField fx:id="textFieldHidden" visible="false"/>
+    <GridPane>
+
+        <Button fx:id="btn1" StackPane.alignment="BOTTOM_CENTER" text="1"  onAction="#figure1" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Button fx:id="btn2" StackPane.alignment="BOTTOM_CENTER" text="2" onAction="#figure2" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Button fx:id="btn3" StackPane.alignment="BOTTOM_CENTER" text="3" onAction="#figure3" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+        <Button fx:id="btnx" StackPane.alignment="BOTTOM_CENTER" text="x" onAction="#multiplication" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+        <Button fx:id="btn4" StackPane.alignment="BOTTOM_CENTER" text="4" onAction="#figure4" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Button fx:id="btn5" StackPane.alignment="BOTTOM_CENTER" text="5" onAction="#figure5" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Button fx:id="btn6" StackPane.alignment="BOTTOM_CENTER" text="6" onAction="#figure6" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+        <Button fx:id="btndivision" StackPane.alignment="BOTTOM_CENTER" text="/" onAction="#division" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+        <Button fx:id="btn7" StackPane.alignment="BOTTOM_CENTER" text="7" onAction="#figure7" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <Button fx:id="btn8" StackPane.alignment="BOTTOM_CENTER" text="8" onAction="#figure8" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Button fx:id="btn9" StackPane.alignment="BOTTOM_CENTER" text="9" onAction="#figure9" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+        <Button fx:id="btnminus" StackPane.alignment="BOTTOM_CENTER" text="-" onAction="#subtraction" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+        <Button fx:id="btn0" StackPane.alignment="BOTTOM_CENTER" text="0" onAction="#figure0" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <Button fx:id="btnc" StackPane.alignment="BOTTOM_CENTER" text="c" onAction="#clear" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        <Button fx:id="btnresult" StackPane.alignment="BOTTOM_CENTER" text="=" onAction="#result" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+        <Button fx:id="summ" StackPane.alignment="BOTTOM_CENTER" text="+" onAction="#summation" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+
+
+    </GridPane>
+
+</VBox>

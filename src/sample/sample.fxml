@@ -1,0 +1,22 @@
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TextField?>
+<?import java.net.URL?>
+<VBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <stylesheets>
+        <URL value="@/styles/style.css"/>
+    </stylesheets>
+    <TextArea disable="true" fx:id="textArea" VBox.vgrow="ALWAYS"/>
+    <StackPane>
+
+        <TextField  fx:id="textField" onAction="#sendMessage"/>
+        <Button fx:id="ok" StackPane.alignment="BOTTOM_RIGHT" text="Ok" onAction="#sendMessage"/>
+    </StackPane>
+
+</VBox>
