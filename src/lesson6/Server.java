@@ -31,8 +31,9 @@ public class Server {
                 new Thread(() -> {
                     try {
                         while (true) {
-                            outputStream.writeUTF(scanner.nextLine());
-                            System.out.println("Server: " + outputStream);
+                            String message = scanner.nextLine();
+                            outputStream.writeUTF(message);
+                            System.out.println("Server: " + message);
                         }
                     } catch (IOException ioException) {
                         ioException.printStackTrace();
@@ -41,10 +42,11 @@ public class Server {
 
                   while (true) {
 String str = inputStream.readUTF();
-                      System.out.println("Клиент: " + str);
                       if(str.equals("/end")){
                           System.out.println("Клиент вышел из чата");
                           break;
+                      } else{
+                          System.out.println("Клиент: " + str);
                       }
                   }
               } catch (IOException e) {
